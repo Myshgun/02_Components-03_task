@@ -56,9 +56,7 @@ export const App = () => {
 		<div className={styles.container}>
 			<div className={styles.display}>
 				<div
-					className={
-						operator === "=" ? styles.result : styles.display
-					}
+					className={operator === "=" ? styles.result : null}
 				>{`${operand1} ${
 					operator === "=" ? "" : operator
 				} ${operand2}`}</div>
